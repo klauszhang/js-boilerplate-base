@@ -11,7 +11,7 @@ this should be the template for js projects
 - [x] use webpack as bundler
 - [ ] spearate dev and production settings
 - [ ] mock json data and serve with jsonapi
-
+- [x] bundle css file while dev and separate css file in production
 ? use typescript
 ? use sass
 
