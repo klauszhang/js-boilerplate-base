@@ -4,4 +4,4 @@
 
 import * as angular from 'angular';
 
-console.log('something here');
+console.log('something here!!');

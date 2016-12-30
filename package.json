@@ -7,7 +7,7 @@
     "prestart": "babel-node build-scripts/start-message.js",
     "start": "npm-run-all --parallel security-check open:dev",
     "security-check": "nsp check",
-    "open:dev": "babel-node build-scripts/dev-server.js"
+    "serve:dev": "babel-node build-scripts/dev-server.js"
   },
   "keywords": [],
   "author": "Hao",
@@ -24,7 +24,8 @@
     "npm-run-all": "^3.1.2",
     "nsp": "^2.6.2",
     "webpack": "^1.14.0",
-    "webpack-dev-middleware": "^1.9.0"
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.14.0"
   },
   "dependencies": {
     "angular": "^1.6.1"
