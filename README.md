@@ -7,7 +7,7 @@ this should be the template for js projects
 - [ ] has example
 - [ ] use angular 1.6
 - [ ] has test
-- [ ] use eslint
+- [x] use eslint
 - [x] use webpack as bundler
 - [ ] spearate dev and production settings
 - [ ] mock json data and serve with jsonapi

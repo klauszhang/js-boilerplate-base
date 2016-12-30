@@ -9,7 +9,10 @@
     "security-check": "nsp check",
     "start:dev-server": "babel-node build-scripts/dev-server.js",
     "lint": "esw webpack.config.* src build-scripts --color",
-    "lint:watch": "npm run lint -- --watch"
+    "lint:watch": "npm run lint -- --watch",
+    "clean-dist": "echo clear dist folder... && rimraf ./dist && mkdir dist",
+    "prebuild": "npm-run-all clean-dist lint && echo check complete, starting build...",
+    "build": "babel-node build-scripts/build.js"
   },
   "keywords": [],
   "author": "Hao",
@@ -21,6 +24,7 @@
     "babel-preset-latest": "^6.16.0",
     "babel-register": "^6.18.0",
     "chalk": "^1.1.3",
+    "css-loader": "^0.26.1",
     "eslint": "^3.12.2",
     "eslint-plugin-import": "^2.2.0",
     "eslint-watch": "^2.1.14",
@@ -29,6 +33,7 @@
     "html-webpack-plugin": "^2.24.1",
     "npm-run-all": "^3.1.2",
     "nsp": "^2.6.2",
+    "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-middleware": "^1.9.0",
     "webpack-hot-middleware": "^2.14.0",
