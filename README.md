@@ -5,7 +5,7 @@ this should be the template for js projects
 - [x] use babel as transpiler 
 - [x] use es6
 - [ ] has example
-- [ ] use angular 1.6
+- [x] use angular 1.6
 - [ ] has test
 - [x] use eslint
 - [x] use webpack as bundler

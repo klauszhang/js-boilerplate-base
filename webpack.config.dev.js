@@ -8,6 +8,7 @@ export default {
     noInfo: false,
     entry: [
         'webpack-hot-middleware/client?reload=true',
+        // 'webpack-hot-middleware/client',
         path.resolve(__dirname, 'src/index')
     ],
     // https://webpack.github.io/docs/configuration.html#target
