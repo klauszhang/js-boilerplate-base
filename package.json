@@ -5,9 +5,11 @@
   "main": "./src/index.js",
   "scripts": {
     "prestart": "babel-node build-scripts/start-message.js",
-    "start": "npm-run-all --parallel security-check open:dev",
+    "start": "npm-run-all --parallel security-check start:dev-server lint:watch",
     "security-check": "nsp check",
-    "serve:dev": "babel-node build-scripts/dev-server.js"
+    "start:dev-server": "babel-node build-scripts/dev-server.js",
+    "lint": "esw webpack.config.* src build-scripts --color",
+    "lint:watch": "npm run lint -- --watch"
   },
   "keywords": [],
   "author": "Hao",
@@ -19,13 +21,18 @@
     "babel-preset-latest": "^6.16.0",
     "babel-register": "^6.18.0",
     "chalk": "^1.1.3",
+    "eslint": "^3.12.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-watch": "^2.1.14",
     "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.24.1",
     "npm-run-all": "^3.1.2",
     "nsp": "^2.6.2",
     "webpack": "^1.14.0",
     "webpack-dev-middleware": "^1.9.0",
-    "webpack-hot-middleware": "^2.14.0"
+    "webpack-hot-middleware": "^2.14.0",
+    "webpack-md5-hash": "0.0.5"
   },
   "dependencies": {
     "angular": "^1.6.1"
