@@ -1,0 +1,11 @@
+{
+  "name": "js-boilerplate-base",
+  "version": "1.0.0",
+  "description": "this should be the template for js projects",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Hao",
+  "license": "ISC",
+  "devDependencies": {}
+}
