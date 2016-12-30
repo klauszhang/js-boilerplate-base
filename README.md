@@ -9,7 +9,11 @@ this should be the template for js projects
 6. has test
 7. use eslint
 8. use webpack as bundler
-
+9. mock json data and serve with jsonapi
 
 ? use typescript
 ? use sass
+
+decisions:
+
+run webpack through express using `webpack-dev-middleware`
