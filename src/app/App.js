@@ -1,6 +1,8 @@
+import apptemp from './app.html';
+
 export default class App {
     constructor() {
-        this.template = `{{$ctrl.text}}`;
+        this.template = apptemp;
         this.controller = AppCtrl;
     }
 }

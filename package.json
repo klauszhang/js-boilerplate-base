@@ -11,7 +11,7 @@
     "lint": "esw webpack.config.* src build-scripts --color",
     "lint:watch": "npm run lint -- --watch",
     "clean-dist": "echo clear dist folder... && rimraf ./dist && mkdir dist",
-    "prebuild": "npm-run-all clean-dist lint && echo check complete, starting build...",
+    "prebuild": "npm-run-all clean-dist lint security-check && echo check complete, starting build...",
     "build": "babel-node build-scripts/build.js"
   },
   "keywords": [],
@@ -30,6 +30,7 @@
     "eslint-watch": "^2.1.14",
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.24.1",
     "npm-run-all": "^3.1.2",
     "nsp": "^2.6.2",

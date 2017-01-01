@@ -9,7 +9,7 @@ this should be the template for js projects
 - [ ] has test
 - [x] use eslint
 - [x] use webpack as bundler
-- [ ] spearate dev and production settings
+- [x] spearate dev and production settings
 - [ ] mock json data and serve with jsonapi
 - [x] bundle css file while dev and separate css file in production
 ? use typescript
