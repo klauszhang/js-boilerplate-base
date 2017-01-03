@@ -12,6 +12,16 @@ this should be the template for js projects
 - [x] spearate dev and production settings
 - [ ] mock json data and serve with jsonapi
 - [x] bundle css file while dev and separate css file in production
+
+
+## Test setup
+
+- [ ] understand jasmine
+- [ ] understand karma
+- [ ] run karma and jasmine under es6
+- [ ] integrate with webpack
+- [ ] consider about e2e test
+
 ? use typescript
 ? use sass
 
