@@ -7,8 +7,8 @@ export default class App {
     }
 }
 
-class AppCtrl {
+export class AppCtrl {
     constructor() {
-        this.text = 'hello world!'
+        this.text = 'hello world'
     }
 }
