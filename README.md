@@ -6,7 +6,9 @@ this should be the template for js projects
 - [x] use es6
 - [ ] has example
 - [x] use angular 1.6
-- [ ] has test
+- [x] has unit test (mocha)
+- [ ] has integration test (karma)
+- [ ] has e2e test (protractor)
 - [x] use eslint
 - [x] use webpack as bundler
 - [x] spearate dev and production settings
@@ -18,7 +20,8 @@ this should be the template for js projects
 
 - [x] understand mocha
 - [ ] understand karma
-- [ ] run karma and mocha under es6
+- [x] run mocha under es6
+- [ ] run karma under es6
 - [ ] integrate with webpack
 - [ ] consider about e2e test
 
